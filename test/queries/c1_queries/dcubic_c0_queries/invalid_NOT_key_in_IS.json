@@ -1,0 +1,23 @@
+{
+    "title": "invalid NOT key in IS",
+    "query": {
+  "WHERE": {
+    "IS": {
+      "NOT": {
+        "EQ": {
+        	"courses_avg": 98
+        }
+      }
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "courses_avg"
+    ],
+    "ORDER": "courses_avg"
+  }
+},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

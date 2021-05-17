@@ -1,0 +1,27 @@
+{
+    "title": "valid MComparison with mfield avg LT",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_avg": 40
+            }
+          },
+          "OPTIONS": {
+              "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"lfs","courses_id":"100","courses_instructor":"","courses_title":"in land food com","courses_uuid":"56403","courses_pass":0,"courses_fail":1,"courses_audit":0,"courses_year":1900,"courses_avg":0},{"courses_dept":"lfs","courses_id":"100","courses_instructor":"","courses_title":"in land food com","courses_uuid":"56402","courses_pass":0,"courses_fail":1,"courses_audit":0,"courses_year":2009,"courses_avg":0},{"courses_dept":"frst","courses_id":"202","courses_instructor":"","courses_title":"forest ecology","courses_uuid":"89536","courses_pass":0,"courses_fail":1,"courses_audit":0,"courses_year":1900,"courses_avg":0},{"courses_dept":"wood","courses_id":"475","courses_instructor":"","courses_title":"prpty,ident&uses","courses_uuid":"49835","courses_pass":0,"courses_fail":2,"courses_audit":0,"courses_year":1900,"courses_avg":1},{"courses_dept":"busi","courses_id":"330","courses_instructor":"","courses_title":"found re apprai","courses_uuid":"16428","courses_pass":0,"courses_fail":1,"courses_audit":0,"courses_year":1900,"courses_avg":4},{"courses_dept":"busi","courses_id":"330","courses_instructor":"","courses_title":"found re apprai","courses_uuid":"16427","courses_pass":0,"courses_fail":1,"courses_audit":0,"courses_year":2016,"courses_avg":4},{"courses_dept":"fopr","courses_id":"362","courses_instructor":"bendickson, dennis","courses_title":"sustnbt&frst ops","courses_uuid":"84769","courses_pass":0,"courses_fail":4,"courses_audit":0,"courses_year":2013,"courses_avg":4.5},{"courses_dept":"civl","courses_id":"403","courses_instructor":"","courses_title":"engr econ anlys","courses_uuid":"53284","courses_pass":1,"courses_fail":3,"courses_audit":0,"courses_year":2010,"courses_avg":33},{"courses_dept":"phil","courses_id":"120","courses_instructor":"","courses_title":"log & crit think","courses_uuid":"51675","courses_pass":5,"courses_fail":5,"courses_audit":0,"courses_year":2008,"courses_avg":33.2},{"courses_dept":"hist","courses_id":"102","courses_instructor":"gossen, david","courses_title":"hist 1500 - 20 c","courses_uuid":"14375","courses_pass":1,"courses_fail":1,"courses_audit":0,"courses_year":2009,"courses_avg":34},{"courses_dept":"educ","courses_id":"172","courses_instructor":"","courses_title":"language & curr","courses_uuid":"50478","courses_pass":39,"courses_fail":34,"courses_audit":0,"courses_year":1900,"courses_avg":39.03},{"courses_dept":"educ","courses_id":"172","courses_instructor":"james, kedrick","courses_title":"language & curr","courses_uuid":"50477","courses_pass":39,"courses_fail":34,"courses_audit":0,"courses_year":2015,"courses_avg":39.03}]
+}

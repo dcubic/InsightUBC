@@ -1,0 +1,21 @@
+{
+    "title": "invalid IS query in GT",
+    "query": {
+  "WHERE": {
+    "GT": {
+      "IS": {
+        "courses_dept": "cpen"
+      }
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "courses_avg"
+    ],
+    "ORDER": "courses_avg"
+  }
+},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

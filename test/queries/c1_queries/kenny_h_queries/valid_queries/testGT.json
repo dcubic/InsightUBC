@@ -1,0 +1,46 @@
+{
+    "title": "Tests to make sure the GT comparator is working properly for all valid components",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 80
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_pass": 50
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_fail": 10
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_audit": 0
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_year": 50
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":80.04,"courses_pass":449,"courses_fail":13,"courses_audit":6,"courses_year":1900},{"courses_avg":81.27,"courses_pass":882,"courses_fail":22,"courses_audit":1,"courses_year":1900},{"courses_avg":81.74,"courses_pass":597,"courses_fail":16,"courses_audit":1,"courses_year":1900}]
+}

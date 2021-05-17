@@ -1,0 +1,45 @@
+{
+     "title": "room query complex",
+     "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "rooms_shortname": "*A*"
+            }
+          },
+          {
+            "GT": {
+              "rooms_seats": 100
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+            "rooms_fullname",
+            "rooms_shortname",
+            "rooms_number",
+            "rooms_name",
+            "rooms_address",
+            "rooms_lat",
+            "rooms_lon",
+            "rooms_seats",
+            "rooms_type",
+            "rooms_furniture",
+            "rooms_href"
+        ],
+        "ORDER": {
+          "dir": "DOWN",
+          "keys": [
+              "rooms_seats",
+              "rooms_type"
+          ]
+        }
+      }
+    },
+     "isQueryValid": true,
+     "result":[
+         {"rooms_fullname":"Henry Angus","rooms_shortname":"ANGU","rooms_number":"098","rooms_name":"ANGU_098","rooms_address":"2053 Main Mall","rooms_lat":49.26486,"rooms_lon":-123.25364,"rooms_seats":260,"rooms_type":"Tiered Large Group","rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/ANGU-098"},{"rooms_fullname":"Mathematics","rooms_shortname":"MATH","rooms_number":"100","rooms_name":"MATH_100","rooms_address":"1984 Mathematics Road","rooms_lat":49.266463,"rooms_lon":-123.255534,"rooms_seats":224,"rooms_type":"Tiered Large Group","rooms_furniture":"Classroom-Fixed Tablets","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MATH-100"},{"rooms_fullname":"Aquatic Ecosystems Research Laboratory","rooms_shortname":"AERL","rooms_number":"120","rooms_name":"AERL_120","rooms_address":"2202 Main Mall","rooms_lat":49.26372,"rooms_lon":-123.25099,"rooms_seats":144,"rooms_type":"Tiered Large Group","rooms_furniture":"Classroom-Fixed Tablets","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/AERL-120"},{"rooms_fullname":"Mathematics Annex","rooms_shortname":"MATX","rooms_number":"1100","rooms_name":"MATX_1100","rooms_address":"1986 Mathematics Road","rooms_lat":49.266089,"rooms_lon":-123.254816,"rooms_seats":106,"rooms_type":"Tiered Large Group","rooms_furniture":"Classroom-Fixed Tablets","rooms_href":"http://students.ubc.ca/campus/discover/buildings-and-classrooms/room/MATX-1100"}
+     ]
+ }

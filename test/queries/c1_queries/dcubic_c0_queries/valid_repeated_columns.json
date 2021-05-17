@@ -1,0 +1,21 @@
+{
+    "title": "valid repeated columns",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_title"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"cpen","courses_title":"intr microcomput"},{"courses_dept":"cpen","courses_title":"intr microcomput"},{"courses_dept":"cpen","courses_title":"prin sftwr const"},{"courses_dept":"cpen","courses_title":"prin sftwr const"},{"courses_dept":"cpen","courses_title":"technical comm"},{"courses_dept":"cpen","courses_title":"technical comm"},{"courses_dept":"cpen","courses_title":"technical comm"},{"courses_dept":"cpen","courses_title":"technical comm"},{"courses_dept":"cpen","courses_title":"dig syst dsgn"},{"courses_dept":"cpen","courses_title":"dig syst dsgn"},{"courses_dept":"cpen","courses_title":"dig syst dsgn"},{"courses_dept":"cpen","courses_title":"dig syst&mcrocom"},{"courses_dept":"cpen","courses_title":"dig syst&mcrocom"},{"courses_dept":"cpen","courses_title":"dig syst&mcrocom"},{"courses_dept":"cpen","courses_title":"software enginrn"},{"courses_dept":"cpen","courses_title":"software enginrn"},{"courses_dept":"cpen","courses_title":"operating system"},{"courses_dept":"cpen","courses_title":"operating system"},{"courses_dept":"cpen","courses_title":"syst softwre eng"},{"courses_dept":"cpen","courses_title":"syst softwre eng"},{"courses_dept":"cpen","courses_title":"com sys dsgn stu"},{"courses_dept":"cpen","courses_title":"com sys dsgn stu"},{"courses_dept":"cpen","courses_title":"com sys dsgn stu"},{"courses_dept":"cpen","courses_title":"comptr architctr"},{"courses_dept":"cpen","courses_title":"comptr architctr"},{"courses_dept":"cpen","courses_title":"mcro syst dsgn"},{"courses_dept":"cpen","courses_title":"mcro syst dsgn"},{"courses_dept":"cpen","courses_title":"soft proj mgmt"},{"courses_dept":"cpen","courses_title":"soft proj mgmt"},{"courses_dept":"cpen","courses_title":"sftw test & anyl"},{"courses_dept":"cpen","courses_title":"sftw test & anyl"},{"courses_dept":"cpen","courses_title":"dist sftware app"},{"courses_dept":"cpen","courses_title":"dist sftware app"},{"courses_dept":"cpen","courses_title":"comptr security"},{"courses_dept":"cpen","courses_title":"comptr security"},{"courses_dept":"cpen","courses_title":"econ anlys proj"},{"courses_dept":"cpen","courses_title":"econ anlys proj"},{"courses_dept":"cpen","courses_title":"econ anlys proj"},{"courses_dept":"cpen","courses_title":"econ anlys proj"},{"courses_dept":"cpen","courses_title":"econ anlys proj"},{"courses_dept":"cpen","courses_title":"capstn dsgn proj"},{"courses_dept":"cpen","courses_title":"capstn dsgn proj"},{"courses_dept":"cpen","courses_title":"software eng prj"},{"courses_dept":"cpen","courses_title":"software eng prj"}
+    ]
+}

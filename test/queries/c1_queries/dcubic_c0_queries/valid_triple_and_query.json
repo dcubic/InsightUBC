@@ -1,0 +1,36 @@
+{
+    "title": "valid triple AND query",
+    "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "LT": {
+              "courses_avg": 89.5
+            }
+          },
+          {
+            "GT": {
+              "courses_avg": 89
+            }
+          },
+          {
+            "IS": {
+              "courses_dept": "math"
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_dept",
+          "courses_title",
+          "courses_avg"
+        ],
+        "ORDER": "courses_avg"
+      }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"math","courses_title":"complex analy","courses_avg":89.13},{"courses_dept":"math","courses_title":"complex analy","courses_avg":89.13},{"courses_dept":"math","courses_title":"mthds asymp anal","courses_avg":89.17},{"courses_dept":"math","courses_title":"mthds asymp anal","courses_avg":89.17},{"courses_dept":"math","courses_title":"complex fluids","courses_avg":89.27},{"courses_dept":"math","courses_title":"complex fluids","courses_avg":89.27},{"courses_dept":"math","courses_title":"msc major essay","courses_avg":89.29},{"courses_dept":"math","courses_title":"elem number thry","courses_avg":89.33},{"courses_dept":"math","courses_title":"elem number thry","courses_avg":89.33},{"courses_dept":"math","courses_title":"functional analy","courses_avg":89.33},{"courses_dept":"math","courses_title":"functional analy","courses_avg":89.33},{"courses_dept":"math","courses_title":"mthds asymp anal","courses_avg":89.38},{"courses_dept":"math","courses_title":"mthds asymp anal","courses_avg":89.38},{"courses_dept":"math","courses_title":"num anly prtl df","courses_avg":89.44},{"courses_dept":"math","courses_title":"num anly prtl df","courses_avg":89.44}
+    ]
+}

@@ -1,0 +1,27 @@
+{
+     "title": "extra key in transformations",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ]
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title"
+         ],
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ],
+          "EXTRA": {}
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

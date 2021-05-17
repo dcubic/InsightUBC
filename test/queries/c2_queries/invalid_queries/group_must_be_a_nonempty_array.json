@@ -1,0 +1,24 @@
+{
+     "title": "group must be a nonempty array",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ]
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": 1,
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

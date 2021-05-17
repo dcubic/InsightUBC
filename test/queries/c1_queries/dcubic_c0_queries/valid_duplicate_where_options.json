@@ -1,0 +1,31 @@
+{
+    "title": "valid duplicate WHERE and OPTIONS",
+    "query": {
+      "WHERE": {
+        "EQ": {
+          "courses_avg": 60
+        }
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_avg"
+        ],
+        "ORDER": "courses_avg"
+      },
+      "WHERE": {
+        "GT": {
+          "courses_pass": 2200
+        }
+      },
+        "OPTIONS": {
+          "COLUMNS": [
+            "courses_pass"
+          ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_pass":2201},{"courses_pass":2278},{"courses_pass":2286},{"courses_pass":2289},{"courses_pass":2378},{"courses_pass":2438},{"courses_pass":2466},{"courses_pass":2491},{"courses_pass":2498},{"courses_pass":2502},{"courses_pass":2557},{"courses_pass":2655},{"courses_pass":2698},{"courses_pass":2994}
+    ]
+}

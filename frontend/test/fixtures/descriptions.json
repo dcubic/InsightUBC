@@ -1,0 +1,16 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query_rooms_with_transformations": "Rooms with transformations",
+    "query_all_rooms_all": "All boxes checked with all for rooms with all possible conditions used and multiple applyKeys",
+    "query_all_rooms_any": "All boxes checked with any for rooms with all possible conditions used and multiple applyKeys",
+    "query_all_rooms_none": "All boxes checked with none for rooms with all possible conditions used and multiple applyKeys",
+    "query_all_courses_all": "All boxes checked with all for courses with all possible conditions used and multiple applyKeys",
+    "query_all_courses_any": "All boxes checked with any for courses with all possible conditions used and multiple applyKeys",
+    "query_all_courses_none": "All boxes checked with none for courses with all possible conditions used and multiple applyKeys",
+    "query_one_condition_courses_all": "Only one condition for conditions with all",
+    "query_one_condition_courses_any": "Only one condition for conditions with any",
+    "query_one_condition_courses_none": "Only one condition for conditions with none",
+    "no_conditions": "No conditions - expect empty WHERE",
+    "no_group_only_apply": "Nothing included in groups, but apply is included",
+    "no_apply_only_group": "Nothing included in apply, but group is included"
+}

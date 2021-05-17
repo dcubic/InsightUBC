@@ -1,0 +1,26 @@
+{
+    "title": "SComparison with mfield undefined numerical",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_undefined": 100
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

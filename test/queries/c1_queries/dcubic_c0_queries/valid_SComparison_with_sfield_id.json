@@ -1,0 +1,21 @@
+{
+    "title": "valid SComparison with sfield id",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_id": "281"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"cpen","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"cpen","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"cpen","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"cpen","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"elec","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"elec","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"elec","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"elec","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"elec","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"elec","courses_title":"technical comm","courses_id":"281"},{"courses_dept":"ends","courses_title":"arch contxt&cltr","courses_id":"281"},{"courses_dept":"ends","courses_title":"arch contxt&cltr","courses_id":"281"},{"courses_dept":"ends","courses_title":"arch contxt&cltr","courses_id":"281"},{"courses_dept":"ends","courses_title":"arch contxt&cltr","courses_id":"281"},{"courses_dept":"fnel","courses_title":"consrv&revitlzt","courses_id":"281"},{"courses_dept":"fnel","courses_title":"consrv&revitlzt","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"geog","courses_title":"geog pacific rim","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"},{"courses_dept":"law","courses_title":"lgl rsrch&writng","courses_id":"281"}
+    ]
+}

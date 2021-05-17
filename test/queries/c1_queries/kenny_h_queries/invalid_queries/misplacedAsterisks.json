@@ -1,0 +1,19 @@
+{
+    "title": "Asterisks found in the middle of string instead of the ends",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "ma*th"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

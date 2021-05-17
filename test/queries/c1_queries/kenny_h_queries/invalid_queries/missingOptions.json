@@ -1,0 +1,12 @@
+{
+    "title": "missing options in query",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 0
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

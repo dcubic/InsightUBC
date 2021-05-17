@@ -1,0 +1,19 @@
+{
+    "title": "dataset is not found",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "games_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "games_dept",
+                "games_avg"
+            ],
+            "ORDER": "games_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

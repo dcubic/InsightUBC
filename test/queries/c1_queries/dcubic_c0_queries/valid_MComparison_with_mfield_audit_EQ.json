@@ -1,0 +1,19 @@
+{
+    "title": "valid MComparison with mfield audit EQ",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_audit": 15
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"cpsc","courses_title":"machine learn i"},{"courses_dept":"cpsc","courses_title":"machine learn i"},{"courses_dept":"frst","courses_title":"mult regres meth"},{"courses_dept":"frst","courses_title":"mult regres meth"},{"courses_dept":"rhsc","courses_title":"eval src evidenc"},{"courses_dept":"rhsc","courses_title":"eval src evidenc"},{"courses_dept":"rhsc","courses_title":"reas & dec-mking"},{"courses_dept":"rhsc","courses_title":"reas & dec-mking"},{"courses_dept":"rhsc","courses_title":"meas in practice"},{"courses_dept":"rhsc","courses_title":"meas in practice"},{"courses_dept":"rhsc","courses_title":"dev rehab prog"},{"courses_dept":"rhsc","courses_title":"rehab learning"}]
+}

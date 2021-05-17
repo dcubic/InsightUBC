@@ -1,0 +1,18 @@
+{
+    "title": "invalid type in ORDER",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": 8
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

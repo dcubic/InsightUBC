@@ -1,0 +1,9 @@
+{
+    "title": "Missing options depth 1",
+    "query": {
+        "WHERE": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

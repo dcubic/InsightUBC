@@ -1,0 +1,40 @@
+{
+    "title": "SELECT dept, id, avg WHERE avg == 95 || avg > 90 && dept == 'adhe' ORDER BY avg",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 96
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 96
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"psyc","courses_id":"549","courses_avg":96},{"courses_dept":"psyc","courses_id":"501","courses_avg":96},{"courses_dept":"psyc","courses_id":"501","courses_avg":96},{"courses_dept":"phil","courses_id":"120","courses_avg":96},{"courses_dept":"pcth","courses_id":"549","courses_avg":96},{"courses_dept":"kin","courses_id":"499","courses_avg":96},{"courses_dept":"epse","courses_id":"528","courses_avg":96},{"courses_dept":"epse","courses_id":"303","courses_avg":96},{"courses_dept":"epse","courses_id":"303","courses_avg":96},{"courses_dept":"crwr","courses_id":"599","courses_avg":96},{"courses_dept":"crwr","courses_id":"599","courses_avg":96},{"courses_dept":"crwr","courses_id":"599","courses_avg":96},{"courses_dept":"crwr","courses_id":"599","courses_avg":96},{"courses_dept":"crwr","courses_id":"599","courses_avg":96},{"courses_dept":"cnps","courses_id":"584","courses_avg":96},{"courses_dept":"apsc","courses_id":"279","courses_avg":96},{"courses_dept":"adhe","courses_id":"329","courses_avg":96.11}
+    ]
+}

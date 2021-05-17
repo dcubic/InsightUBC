@@ -1,0 +1,31 @@
+{
+    "title": "invalid AND has two keys",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_avg": 70
+                    },
+                    "GT": {
+                        "courses_avg": 60
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "baniassad, elisa"
+            }
+        }
+        ]
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "courses_instructor",
+            "courses_avg"
+        ],
+        "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,18 @@
+{
+    "title": "idstring no key",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

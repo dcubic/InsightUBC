@@ -1,0 +1,26 @@
+{
+    "title": "invalid multiple datasets alternate",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+      	                 "courses_avg": 60
+      	              }
+                  },
+                  {
+                      "GT": {
+                          "alternate_fail": 20
+                      }
+                  }
+              ]
+          },
+          "OPTIONS": {
+              "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

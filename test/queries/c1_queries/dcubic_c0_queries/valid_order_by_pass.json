@@ -1,0 +1,21 @@
+{
+    "title": "valid ORDER by pass",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": 2000
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "courses_pass"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_title":"catastroph earth","courses_pass":2015},{"courses_title":"catastroph earth","courses_pass":2016},{"courses_title":"princpl macrecon","courses_pass":2019},{"courses_title":"prncpls micrecon","courses_pass":2023},{"courses_title":"prncpls micrecon","courses_pass":2063},{"courses_title":"princpl macrecon","courses_pass":2083},{"courses_title":"dev soc cli psy","courses_pass":2095},{"courses_title":"prncpls micrecon","courses_pass":2099},{"courses_title":"prncpls micrecon","courses_pass":2124},{"courses_title":"princpl macrecon","courses_pass":2134},{"courses_title":"princpl macrecon","courses_pass":2169},{"courses_title":"bio cog psych","courses_pass":2201},{"courses_title":"prncpls micrecon","courses_pass":2278},{"courses_title":"prncpls micrecon","courses_pass":2286},{"courses_title":"dev soc cli psy","courses_pass":2289},{"courses_title":"prncpls micrecon","courses_pass":2378},{"courses_title":"prncpls micrecon","courses_pass":2438},{"courses_title":"strat univ writ","courses_pass":2466},{"courses_title":"strat univ writ","courses_pass":2491},{"courses_title":"univrsty writing","courses_pass":2498},{"courses_title":"univrsty writing","courses_pass":2502},{"courses_title":"strat univ writ","courses_pass":2557},{"courses_title":"strat univ writ","courses_pass":2655},{"courses_title":"strat univ writ","courses_pass":2698},{"courses_title":"strat univ writ","courses_pass":2994}
+    ]
+}

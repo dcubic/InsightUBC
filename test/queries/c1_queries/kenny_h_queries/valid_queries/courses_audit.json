@@ -1,0 +1,23 @@
+{
+    "title": "select all courses with NOT LT 10 people auditing (> 9 people auditing) ordered by number of audits",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "LT": {
+                    "courses_audit": 10
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "courses_title"
+            ],
+            "ORDER": "courses_audit"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_audit":10,"courses_title":"rehab learning"},{"courses_audit":10,"courses_title":"eval src evidenc"},{"courses_audit":10,"courses_title":"mult regres meth"},{"courses_audit":10,"courses_title":"mult regres meth"},{"courses_audit":10,"courses_title":"adv biometrics"},{"courses_audit":11,"courses_title":"reas & dec-mking"},{"courses_audit":11,"courses_title":"mult regres meth"},{"courses_audit":11,"courses_title":"mult regres meth"},{"courses_audit":11,"courses_title":"machine lrn mine"},{"courses_audit":12,"courses_title":"rehab learning"},{"courses_audit":12,"courses_title":"reas & dec-mking"},{"courses_audit":12,"courses_title":"reas & dec-mking"},{"courses_audit":12,"courses_title":"eval src evidenc"},{"courses_audit":12,"courses_title":"beginner fren i"},{"courses_audit":12,"courses_title":"pop & quant gene"},{"courses_audit":12,"courses_title":"pop & quant gene"},{"courses_audit":13,"courses_title":"rehab learning"},{"courses_audit":13,"courses_title":"basic cnto 1"},{"courses_audit":14,"courses_title":"dev rehab prog"},{"courses_audit":14,"courses_title":"machine lrn mine"},{"courses_audit":15,"courses_title":"dev rehab prog"},{"courses_audit":15,"courses_title":"eval src evidenc"},{"courses_audit":15,"courses_title":"intr gis frs&con"},{"courses_audit":17,"courses_title":"rehab learning"},{"courses_audit":18,"courses_title":"meas in practice"},{"courses_audit":18,"courses_title":"machine learn i"},{"courses_audit":19,"courses_title":"meas in practice"},{"courses_audit":19,"courses_title":"reas & dec-mking"},{"courses_audit":19,"courses_title":"reas & dec-mking"},{"courses_audit":19,"courses_title":"mult regres meth"},{"courses_audit":19,"courses_title":"mult regres meth"},{"courses_audit":20,"courses_title":"dev rehab prog"},{"courses_audit":21,"courses_title":"eval src evidenc"},{"courses_audit":21,"courses_title":"machine learn i"},{"courses_audit":23,"courses_title":"eval src evidenc"}
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "title": "no underscore in id",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "coursesdept": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "coursesdept",
+                "coursestitle"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

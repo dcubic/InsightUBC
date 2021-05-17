@@ -1,0 +1,19 @@
+{
+    "title": "invalid order key not in columns",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

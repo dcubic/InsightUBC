@@ -1,0 +1,17 @@
+{
+    "title": "invalid query with a dataset not added",
+    "query":{
+        "WHERE": {
+            "IS": {
+                "taco_avg": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "taco_best"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

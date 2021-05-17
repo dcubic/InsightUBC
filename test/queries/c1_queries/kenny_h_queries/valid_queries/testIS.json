@@ -1,0 +1,46 @@
+{
+    "title": "Tests to make sure the IS comparator is working properly for all valid components",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "cpsc"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "*0"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_instructor": "*elisa*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_title": "*s*"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_uuid": "*2*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cpsc","courses_id":"410","courses_instructor":"baniassad, elisa","courses_title":"adv software eng","courses_uuid":"49926"},{"courses_dept":"cpsc","courses_id":"410","courses_instructor":"baniassad, elisa","courses_title":"adv software eng","courses_uuid":"1327"},{"courses_dept":"cpsc","courses_id":"310","courses_instructor":"baniassad, elisa","courses_title":"intr sftwr eng","courses_uuid":"67312"},{"courses_dept":"cpsc","courses_id":"310","courses_instructor":"baniassad, elisa","courses_title":"intr sftwr eng","courses_uuid":"62386"},{"courses_dept":"cpsc","courses_id":"310","courses_instructor":"baniassad, elisa","courses_title":"intr sftwr eng","courses_uuid":"62385"},{"courses_dept":"cpsc","courses_id":"310","courses_instructor":"baniassad, elisa","courses_title":"intr sftwr eng","courses_uuid":"1294"},{"courses_dept":"cpsc","courses_id":"210","courses_instructor":"baniassad, elisa","courses_title":"sftwr constructn","courses_uuid":"62357"},{"courses_dept":"cpsc","courses_id":"210","courses_instructor":"baniassad, elisa","courses_title":"sftwr constructn","courses_uuid":"1269"},{"courses_dept":"cpsc","courses_id":"210","courses_instructor":"baniassad, elisa","courses_title":"sftwr constructn","courses_uuid":"1268"},{"courses_dept":"cpsc","courses_id":"210","courses_instructor":"baniassad, elisa","courses_title":"sftwr constructn","courses_uuid":"1265"}]
+}

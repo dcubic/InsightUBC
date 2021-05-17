@@ -1,0 +1,32 @@
+{
+     "title": "empty apply array",
+     "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "rooms_furniture": "*Tables*"
+            }
+          },
+          {
+            "GT": {
+              "rooms_seats": 300
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "rooms_shortname"
+        ]
+      },
+      "TRANSFORMATIONS": {
+        "GROUP": [
+          "rooms_shortname"
+        ],
+        "APPLY": []
+      }
+    },
+     "isQueryValid": true,
+     "result":[{"rooms_shortname":"HEBB"},{"rooms_shortname":"LSC"},{"rooms_shortname":"OSBO"}]
+ }

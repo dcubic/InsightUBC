@@ -1,0 +1,29 @@
+{
+     "title": "ORDER missing keys key",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ],
+         "ORDER": {
+           "dir": "DOWN"
+         }
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title"
+         ],
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

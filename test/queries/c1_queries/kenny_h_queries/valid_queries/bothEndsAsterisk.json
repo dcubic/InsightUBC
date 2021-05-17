@@ -1,0 +1,31 @@
+{
+    "title": "select all course titles with 'lculus' in the middle and have an average over 85, sorted by course_id",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_title": "*lculus*"
+                    }
+                },
+                {
+                    "GT": {
+                        "courses_avg": 85
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_dept",
+                "courses_title",
+                "courses_avg"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_id":"227","courses_dept":"math","courses_title":"adv calculus ii","courses_avg":87.24},{"courses_id":"227","courses_dept":"math","courses_title":"adv calculus ii","courses_avg":87.24},{"courses_id":"227","courses_dept":"math","courses_title":"adv calculus ii","courses_avg":87.71},{"courses_id":"227","courses_dept":"math","courses_title":"adv calculus ii","courses_avg":87.71}]
+}

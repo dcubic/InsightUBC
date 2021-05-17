@@ -1,0 +1,19 @@
+{
+    "title": "invalid column name",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_invalid"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

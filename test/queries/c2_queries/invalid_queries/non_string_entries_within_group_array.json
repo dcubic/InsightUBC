@@ -1,0 +1,28 @@
+{
+     "title": "non-string entries within group array",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ]
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title",
+           1,
+           2
+         ],
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

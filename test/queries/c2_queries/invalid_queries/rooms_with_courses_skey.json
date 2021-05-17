@@ -1,0 +1,17 @@
+{
+     "title": "courses with rooms mkey",
+     "query": {
+         "WHERE": {
+             "IS": {
+                 "rooms_dept": "pablo"
+             }
+         },
+         "OPTIONS": {
+             "COLUMNS": [
+                 "rooms_dept"
+             ]
+         }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

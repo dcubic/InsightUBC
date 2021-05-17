@@ -1,0 +1,36 @@
+{
+    "title": "select all course ids that end in 80 and are from the math department",
+    "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "courses_id": "*80"
+            }
+          },
+          {
+            "IS": {
+              "courses_dept": "math"
+            }
+          },
+          {
+            "LT": {
+              "courses_avg": 55
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_id",
+          "courses_title",
+          "courses_avg"
+        ],
+        "ORDER": "courses_avg"
+      }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":46.52},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":49.95},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":51.5},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":53.12},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":53.12},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":54.44},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":54.82},{"courses_id":"180","courses_title":"dif calc phys ap","courses_avg":54.96}
+    ]
+}

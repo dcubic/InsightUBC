@@ -1,0 +1,19 @@
+{
+    "title": "SComparison with number",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_id": 1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

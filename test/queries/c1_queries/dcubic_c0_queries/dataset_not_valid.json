@@ -1,0 +1,19 @@
+{
+    "title": "querying on dataset that hasn't been added",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "invalid_dept": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "invalid_dept",
+                "invalid_title",
+                "invalid_invalid"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

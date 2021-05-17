@@ -1,0 +1,17 @@
+{
+    "title": "invalid query with referenced dataset being an empty string",
+    "query":{
+        "WHERE": {
+            "IS": {
+                "": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "_"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,34 @@
+{
+     "title": "room query complex no transformations DOWN string case",
+     "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "rooms_furniture": "*Tables*"
+            }
+          },
+          {
+            "GT": {
+              "rooms_seats": 300
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "rooms_shortname"
+        ],
+        "ORDER": {
+          "dir": "DOWN",
+          "keys": [
+            "rooms_shortname"
+          ]
+        }
+      }
+    },
+     "isQueryValid": true,
+    "result":[
+        {"rooms_shortname":"OSBO"},{"rooms_shortname":"LSC"},{"rooms_shortname":"LSC"},{"rooms_shortname":"HEBB"}
+    ]
+ }

@@ -1,0 +1,17 @@
+{
+    "title": "invalid query with LT must be an object",
+    "query":{
+        "WHERE": {
+            "LT": [[]
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

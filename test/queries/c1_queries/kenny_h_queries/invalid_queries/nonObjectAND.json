@@ -1,0 +1,17 @@
+{
+    "title": "invalid query with AND must be an object",
+    "query":{
+        "WHERE": {
+            "AND": [[]
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

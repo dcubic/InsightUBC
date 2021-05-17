@@ -1,0 +1,12 @@
+{
+    "title": "Missing where depth 1",
+    "query": {
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+                ]
+            }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

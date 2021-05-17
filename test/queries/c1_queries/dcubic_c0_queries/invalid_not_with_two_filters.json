@@ -1,0 +1,28 @@
+{
+    "title": "invalid not with two filters",
+    "query": {
+        "WHERE": {
+            "NOT": [
+                {
+                    "LT": {
+      	                 "courses_avg": 50
+      	              }
+                  },
+                  {
+                      "IS": {
+                          "courses_instructor": "baniassad, elisa"
+                      }
+                  }
+              ]
+          },
+          "OPTIONS": {
+              "COLUMNS": [
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

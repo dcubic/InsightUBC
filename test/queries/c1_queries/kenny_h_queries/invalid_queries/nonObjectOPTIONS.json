@@ -1,0 +1,14 @@
+{
+    "title": "invalid query with OPTIONS must be an object",
+    "query":{
+        "WHERE": {
+            "IS": {
+                "courses_dept": "cpsc"
+            }
+        },
+        "OPTIONS":
+        []
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

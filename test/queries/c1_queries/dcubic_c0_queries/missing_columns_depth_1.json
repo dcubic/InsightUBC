@@ -1,0 +1,11 @@
+{
+    "title": "Options missing columns",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

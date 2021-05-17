@@ -1,0 +1,26 @@
+{
+     "title": "Keys in COLUMNS must be in GROUP or APPLY when TRANSFORMATIONS is present",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ]
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_fullname"
+         ],
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

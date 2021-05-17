@@ -1,0 +1,26 @@
+{
+    "title": "nested AND -> NOT",
+        "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "NOT": {
+                "GT": {
+                  "courses_avg": 40
+                }
+              }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_avg"
+        ],
+        "ORDER": "courses_avg"
+      }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_avg":0},{"courses_avg":0},{"courses_avg":0},{"courses_avg":1},{"courses_avg":4},{"courses_avg":4},{"courses_avg":4.5},{"courses_avg":33},{"courses_avg":33.2},{"courses_avg":34},{"courses_avg":39.03},{"courses_avg":39.03}
+    ]
+}

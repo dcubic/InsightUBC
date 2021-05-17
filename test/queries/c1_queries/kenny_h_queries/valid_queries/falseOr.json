@@ -1,0 +1,30 @@
+{
+    "title": "select all courses with an average of 100",
+    "query": {
+        "WHERE": {
+            "OR": [{
+                "EQ": {
+                    "courses_avg": 100
+                }
+            }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

@@ -1,0 +1,14 @@
+{
+    "title": "missing Columns in options",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 0
+            }
+        },
+        "OPTIONS": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

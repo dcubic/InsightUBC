@@ -1,0 +1,46 @@
+{
+    "title": "Tests to make sure the EQ comparator is working properly for all valid components",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_avg": 39.03
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_pass": 39
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_fail": 34
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_audit": 0
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_year": 2015
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":39.03,"courses_pass":39,"courses_fail":34,"courses_audit":0,"courses_year":2015}]
+}

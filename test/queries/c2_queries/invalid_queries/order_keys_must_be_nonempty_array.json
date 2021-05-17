@@ -1,0 +1,30 @@
+{
+     "title": "order keys must be non-empty array",
+     "query": {
+         "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ],
+         "ORDER": {
+           "dir": "DOWN",
+           "keys": {}
+         }
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title"
+         ],
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

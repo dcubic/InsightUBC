@@ -1,0 +1,25 @@
+{
+    "title": "invalid WHERE with two keys",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "AND": [
+                    {
+                        "LT": {
+                            "courses_avg": 60
+                        }
+                    }
+                ]
+            },
+            "OPTIONS": {
+                "COLUMNS": [
+                    "courses_dept",
+                    "courses_title",
+                    "courses_avg"
+                    ]
+                }
+            }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

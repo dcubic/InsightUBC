@@ -1,0 +1,17 @@
+{
+    "title": "invalid query with GT must be an object",
+    "query":{
+        "WHERE": {
+            "GT": [[]
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

@@ -1,0 +1,28 @@
+{
+    "title": "COLUMN without idstring",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+      	                 "courses_avg": 60
+      	              }
+                  },
+                  {
+                      "GT": {
+                          "courses_fail": 20
+                      }
+                  }
+              ]
+          },
+          "OPTIONS": {
+              "COLUMNS": [
+                "courses_fail",
+                "_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

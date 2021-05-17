@@ -1,0 +1,17 @@
+{
+     "title": "courses with rooms skey",
+     "query": {
+         "WHERE": {
+             "IS": {
+                 "courses_fullname": "pablo"
+             }
+         },
+         "OPTIONS": {
+             "COLUMNS": [
+                 "courses_fullname"
+             ]
+         }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

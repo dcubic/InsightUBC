@@ -1,0 +1,20 @@
+{
+    "title": "valid ORDER by avg",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 60
+            }
+          },
+          "OPTIONS": {
+              "COLUMNS": [
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60},{"courses_avg":60}
+    ]
+}

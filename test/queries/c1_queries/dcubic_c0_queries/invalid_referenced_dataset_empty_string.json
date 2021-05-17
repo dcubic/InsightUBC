@@ -1,0 +1,18 @@
+{
+    "title": "invalid referenced dataset is empty string",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "_dept": "cpen"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

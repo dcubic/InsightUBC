@@ -1,0 +1,26 @@
+{
+    "title": "MComparison with sfield title string",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_title": "thesis"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

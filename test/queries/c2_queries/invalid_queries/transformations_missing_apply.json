@@ -1,0 +1,19 @@
+{
+     "title": "transformations missing apply",
+     "query": {
+       "WHERE": {},
+           "OPTIONS": {
+             "COLUMNS": [
+               "courses_title",
+               "overallAvg"
+             ]
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title"
+         ]
+         }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

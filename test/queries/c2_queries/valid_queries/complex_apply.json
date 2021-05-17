@@ -1,0 +1,54 @@
+{
+     "title": "complex apply",
+     "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "courses_dept": "*cpsc*"
+            }
+          },
+          {
+            "GT": {
+              "courses_avg": 80
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "overallMinAvg",
+            "overallMaxPass",
+            "overallCountPass",
+            "overallSum",
+            "overallAvgAudit"
+        ],
+        "ORDER": {
+          "dir": "DOWN",
+          "keys": [
+            "overallMinAvg",
+            "overallMaxPass",
+            "overallCountPass",
+            "overallSum",
+            "overallAvgAudit"
+          ]
+        }
+      },
+      "TRANSFORMATIONS": {
+        "GROUP": [
+          "courses_title"
+        ],
+        "APPLY": [
+                {"overallMinAvg": {"MIN": "courses_avg"}},
+                {"overallMaxPass": {"MAX": "courses_pass"}},
+                {"overallCountPass": {"COUNT": "courses_avg"}},
+                {"overallSum": {"SUM": "courses_fail"}},
+                {"overallAvgAudit": {"AVG": "courses_audit"}}
+            ]
+      }
+    },
+     "isQueryValid": true,
+     "result":[
+         {"overallMinAvg":88.47,"overallMaxPass":25,"overallCountPass":2,"overallSum":0,"overallAvgAudit":1.5},{"overallMinAvg":87.36,"overallMaxPass":19,"overallCountPass":5,"overallSum":0,"overallAvgAudit":0.4},{"overallMinAvg":86.04,"overallMaxPass":51,"overallCountPass":1,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":84.67,"overallMaxPass":5,"overallCountPass":10,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":84.5,"overallMaxPass":22,"overallCountPass":9,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":84.33,"overallMaxPass":14,"overallCountPass":6,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":84.25,"overallMaxPass":20,"overallCountPass":5,"overallSum":0,"overallAvgAudit":0.4},{"overallMinAvg":83.94,"overallMaxPass":44,"overallCountPass":4,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":83.8,"overallMaxPass":8,"overallCountPass":6,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":83.78,"overallMaxPass":23,"overallCountPass":4,"overallSum":0,"overallAvgAudit":0.75},{"overallMinAvg":83.08,"overallMaxPass":11,"overallCountPass":9,"overallSum":2,"overallAvgAudit":0},{"overallMinAvg":82.65,"overallMaxPass":25,"overallCountPass":7,"overallSum":2,"overallAvgAudit":0.14},{"overallMinAvg":82.55,"overallMaxPass":18,"overallCountPass":4,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":82.5,"overallMaxPass":19,"overallCountPass":5,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":82.45,"overallMaxPass":119,"overallCountPass":3,"overallSum":5,"overallAvgAudit":0},{"overallMinAvg":82.32,"overallMaxPass":69,"overallCountPass":7,"overallSum":7,"overallAvgAudit":0},{"overallMinAvg":82.27,"overallMaxPass":62,"overallCountPass":1,"overallSum":4,"overallAvgAudit":0},{"overallMinAvg":82.15,"overallMaxPass":14,"overallCountPass":2,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":82.07,"overallMaxPass":20,"overallCountPass":6,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":81.76,"overallMaxPass":128,"overallCountPass":1,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":81.68,"overallMaxPass":75,"overallCountPass":8,"overallSum":2,"overallAvgAudit":0},{"overallMinAvg":81.64,"overallMaxPass":22,"overallCountPass":9,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":81.28,"overallMaxPass":32,"overallCountPass":5,"overallSum":0,"overallAvgAudit":0.4},{"overallMinAvg":81.25,"overallMaxPass":23,"overallCountPass":8,"overallSum":2,"overallAvgAudit":0.5},{"overallMinAvg":81.18,"overallMaxPass":77,"overallCountPass":1,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":81.12,"overallMaxPass":79,"overallCountPass":8,"overallSum":0,"overallAvgAudit":4.56},{"overallMinAvg":81.06,"overallMaxPass":22,"overallCountPass":7,"overallSum":0,"overallAvgAudit":0.29},{"overallMinAvg":81,"overallMaxPass":40,"overallCountPass":3,"overallSum":4,"overallAvgAudit":0},{"overallMinAvg":80.85,"overallMaxPass":270,"overallCountPass":4,"overallSum":4,"overallAvgAudit":0},{"overallMinAvg":80.77,"overallMaxPass":184,"overallCountPass":3,"overallSum":2,"overallAvgAudit":0},{"overallMinAvg":80.62,"overallMaxPass":13,"overallCountPass":1,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":80.55,"overallMaxPass":42,"overallCountPass":1,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":80.52,"overallMaxPass":158,"overallCountPass":6,"overallSum":6,"overallAvgAudit":0},{"overallMinAvg":80.29,"overallMaxPass":171,"overallCountPass":2,"overallSum":8,"overallAvgAudit":7},{"overallMinAvg":80.26,"overallMaxPass":85,"overallCountPass":3,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":80.24,"overallMaxPass":162,"overallCountPass":8,"overallSum":15,"overallAvgAudit":0},{"overallMinAvg":80.2,"overallMaxPass":147,"overallCountPass":6,"overallSum":11,"overallAvgAudit":0},{"overallMinAvg":80.18,"overallMaxPass":74,"overallCountPass":1,"overallSum":0,"overallAvgAudit":0},{"overallMinAvg":80.15,"overallMaxPass":105,"overallCountPass":2,"overallSum":12,"overallAvgAudit":0},{"overallMinAvg":80.11,"overallMaxPass":92,"overallCountPass":6,"overallSum":4,"overallAvgAudit":0.33},{"overallMinAvg":80.09,"overallMaxPass":151,"overallCountPass":6,"overallSum":62,"overallAvgAudit":0}
+     ]
+ }

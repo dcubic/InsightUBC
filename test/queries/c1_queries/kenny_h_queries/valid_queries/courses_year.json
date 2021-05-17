@@ -1,0 +1,47 @@
+{
+    "title": "select all courses that aren't from 1900, but are also NOT GT than the year 2007, ordered by year",
+    "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "LT": {
+              "courses_pass": 3
+            }
+          },
+          {
+            "NOT": {
+              "GT": {
+                "courses_year": 2007
+              }
+            }
+          },
+          {
+            "NOT": {
+              "EQ": {
+                "courses_year": 1900
+              }
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_avg",
+          "courses_pass",
+          "courses_fail",
+          "courses_audit",
+          "courses_year",
+          "courses_dept",
+          "courses_id",
+          "courses_instructor",
+          "courses_title",
+          "courses_uuid"
+        ],
+        "ORDER": "courses_year"
+      }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_year":2007,"courses_title":"seminar"},{"courses_year":2007,"courses_title":"ms thesis"},{"courses_year":2007,"courses_title":"seminar"},{"courses_year":2007,"courses_title":"msn major essay"},{"courses_year":2007,"courses_title":"master's thesis"},{"courses_year":2007,"courses_title":"masters thesis"},{"courses_year":2007,"courses_title":"seminar"},{"courses_year":2007,"courses_title":"seminar"},{"courses_year":2007,"courses_title":"seminar"},{"courses_year":2007,"courses_title":"research seminar"},{"courses_year":2007,"courses_title":"research seminar"},{"courses_year":2007,"courses_title":"research seminar"},{"courses_year":2007,"courses_title":"meas thry&integr"},{"courses_year":2007,"courses_title":"masters thesis"},{"courses_year":2007,"courses_title":"forest oper's ii"},{"courses_year":2007,"courses_title":"forest oper's i"},{"courses_year":2007,"courses_title":"eng report"},{"courses_year":2007,"courses_title":"masters thesis"},{"courses_year":2007,"courses_title":"implant therapy"},{"courses_year":2007,"courses_title":"lit rvw prdt i"},{"courses_year":2007,"courses_title":"prdntl case mgmt"},{"courses_year":2007,"courses_title":"child's lit"},{"courses_year":2007,"courses_title":"masc thesis"}
+    ]
+}

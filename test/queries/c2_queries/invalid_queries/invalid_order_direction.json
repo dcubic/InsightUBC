@@ -1,0 +1,32 @@
+{
+     "title": "invalid order direction",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ],
+         "ORDER": {
+           "dir": 1,
+           "keys": [
+             "overallAvg"
+           ]
+         }
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title"
+         ],
+         "APPLY": [
+           {
+             "overallAvg": {
+               "AVG": "courses_avg"
+             }
+           }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

@@ -1,0 +1,19 @@
+{
+    "title": "invalid NOT no key",
+    "query": {
+        "WHERE": {
+            "NOT": {
+
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

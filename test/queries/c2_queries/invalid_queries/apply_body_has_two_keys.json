@@ -1,0 +1,27 @@
+{
+     "title": "apply body has two keys",
+     "query": {
+       "WHERE": {},
+       "OPTIONS": {
+         "COLUMNS": [
+           "courses_title",
+           "overallAvg"
+         ]
+       },
+       "TRANSFORMATIONS": {
+         "GROUP": [
+           "courses_title"
+         ],
+         "APPLY": [
+             {
+                 "overallAvg": {
+                     "AVG": "courses_avg",
+                     "MAX": "courses_avg"
+                 }
+             }
+         ]
+       }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

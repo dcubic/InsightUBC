@@ -1,0 +1,19 @@
+{
+    "title": "invalid AND - is empty",
+    "query": {
+        "WHERE": {
+            "AND": {
+
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

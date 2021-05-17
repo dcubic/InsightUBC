@@ -1,0 +1,22 @@
+{
+    "title": "valid ORDER by id",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 98
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_id"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"spph","courses_title":"work int health","courses_id":"300"},{"courses_dept":"spph","courses_title":"work int health","courses_id":"300"},{"courses_dept":"epse","courses_title":"assess lrn diffi","courses_id":"421"},{"courses_dept":"epse","courses_title":"assess lrn diffi","courses_id":"421"},{"courses_dept":"epse","courses_title":"assess lrn diffi","courses_id":"421"},{"courses_dept":"epse","courses_title":"educ stds autism","courses_id":"449"},{"courses_dept":"epse","courses_title":"educ stds autism","courses_id":"449"},{"courses_dept":"epse","courses_title":"educ stds autism","courses_id":"449"},{"courses_dept":"epse","courses_title":"educ stds autism","courses_id":"449"},{"courses_dept":"epse","courses_title":"educ stds autism","courses_id":"449"},{"courses_dept":"nurs","courses_title":"cl pro prim care","courses_id":"509"},{"courses_dept":"nurs","courses_title":"cl pro prim care","courses_id":"509"},{"courses_dept":"nurs","courses_title":"cl pro prim care","courses_id":"509"},{"courses_dept":"nurs","courses_title":"cl pro prim care","courses_id":"509"},{"courses_dept":"epse","courses_title":"dev el sk df&hrd","courses_id":"519"},{"courses_dept":"epse","courses_title":"dev el sk df&hrd","courses_id":"519"},{"courses_dept":"math","courses_title":"algb topology i","courses_id":"527"},{"courses_dept":"math","courses_title":"algb topology i","courses_id":"527"},{"courses_dept":"eece","courses_title":"multimedia sys","courses_id":"541"},{"courses_dept":"eece","courses_title":"multimedia sys","courses_id":"541"},{"courses_dept":"cnps","courses_title":"career planning","courses_id":"574"},{"courses_dept":"nurs","courses_title":"fam nrs pract","courses_id":"578"},{"courses_dept":"nurs","courses_title":"fam nrs pract","courses_id":"578"},{"courses_dept":"nurs","courses_title":"fam nrs pract","courses_id":"578"},{"courses_dept":"nurs","courses_title":"fam nrs pract","courses_id":"578"}
+    ]
+}

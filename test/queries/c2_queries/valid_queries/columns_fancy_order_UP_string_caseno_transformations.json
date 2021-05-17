@@ -1,0 +1,36 @@
+{
+     "title": "columns fancy order with no transformations",
+     "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "courses_dept": "*cpsc*"
+            }
+          },
+          {
+            "GT": {
+              "courses_avg": 93
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_dept",
+          "courses_avg"
+        ],
+        "ORDER": {
+          "dir": "UP",
+          "keys": [
+            "courses_avg",
+            "courses_dept"
+          ]
+        }
+      }
+    },
+     "isQueryValid": true,
+     "result":[
+         {"courses_dept":"cpsc","courses_avg":93.38},{"courses_dept":"cpsc","courses_avg":93.38},{"courses_dept":"cpsc","courses_avg":93.5},{"courses_dept":"cpsc","courses_avg":93.5},{"courses_dept":"cpsc","courses_avg":94},{"courses_dept":"cpsc","courses_avg":94},{"courses_dept":"cpsc","courses_avg":94.5},{"courses_dept":"cpsc","courses_avg":94.5},{"courses_dept":"cpsc","courses_avg":95},{"courses_dept":"cpsc","courses_avg":95}
+     ]
+ }

@@ -1,0 +1,17 @@
+{
+    "title": "invalid query with property 'group' of undefined",
+    "query":{
+        "WHERE": {
+            "IS": {
+                "taco": "cpsc"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "course"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

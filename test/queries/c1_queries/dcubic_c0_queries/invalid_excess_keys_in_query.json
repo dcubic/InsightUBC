@@ -1,0 +1,21 @@
+{
+    "title": "invalid excess keys in query",
+    "query": {
+  "WHERE": {
+    "EQ": {
+      "courses_avg": 60
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg"
+    ],
+    "ORDER": "courses_avg"
+  },
+		"IS": {
+      "courses_uuid": 1
+    }
+},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

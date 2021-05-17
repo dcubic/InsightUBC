@@ -1,0 +1,26 @@
+{
+    "title": "invalid multiple datasets with room",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+      	                 "courses_avg": 60
+      	              }
+                  },
+                  {
+                      "GT": {
+                          "rooms_fail": 20
+                      }
+                  }
+              ]
+          },
+          "OPTIONS": {
+              "COLUMNS": [
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

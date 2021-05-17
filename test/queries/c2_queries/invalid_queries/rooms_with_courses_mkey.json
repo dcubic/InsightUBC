@@ -1,0 +1,17 @@
+{
+     "title": "courses with rooms mkey",
+     "query": {
+         "WHERE": {
+             "GT": {
+                 "rooms_pass": 2000
+             }
+         },
+         "OPTIONS": {
+             "COLUMNS": [
+                 "rooms_pass"
+             ]
+         }
+     },
+     "isQueryValid": false,
+     "result": "InsightError"
+ }

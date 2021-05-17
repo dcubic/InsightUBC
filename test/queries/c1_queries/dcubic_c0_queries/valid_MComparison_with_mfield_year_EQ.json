@@ -1,0 +1,38 @@
+{
+    "title": "valid MComparison with mfield year",
+    "query": {
+            "WHERE": {
+            "AND": [
+              {
+              	"EQ": {
+              	"courses_year": 2007
+            			}
+              },
+              {
+                "GT": {
+                	"courses_avg": 97
+              	}
+              }
+            ]
+            },
+            "OPTIONS": {
+                "COLUMNS": [
+                  "courses_dept",
+                  "courses_id",
+                  "courses_instructor",
+                  "courses_title",
+                  "courses_uuid",
+                  "courses_pass",
+                  "courses_fail",
+                  "courses_audit",
+                  "courses_year",
+                  "courses_avg"
+                ],
+                "ORDER": "courses_avg"
+            }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"epse","courses_id":"596","courses_instructor":"kishor, nand","courses_title":"cor des ed res","courses_uuid":"86962","courses_pass":11,"courses_fail":0,"courses_audit":0,"courses_year":2007,"courses_avg":97.09},{"courses_dept":"epse","courses_id":"606","courses_instructor":"porath, marion","courses_title":"coll&uni teachng","courses_uuid":"86966","courses_pass":9,"courses_fail":0,"courses_audit":0,"courses_year":2007,"courses_avg":97.67}
+    ]
+}

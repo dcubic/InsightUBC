@@ -1,0 +1,30 @@
+{
+    "title": "select all courses with progrmng in its title",
+    "query": {
+      "WHERE": {
+            "AND": [
+              {
+                "IS": {
+             		 "courses_title": "*progrmng*"
+            		}
+              },
+              {
+                "GT": {
+                "courses_avg": 80
+              	}
+              }
+            ]
+          },
+          "OPTIONS": {
+            "COLUMNS": [
+              "courses_title",
+              "courses_avg"
+            ],
+            "ORDER": "courses_title"
+          }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_title":"comptn, progrmng","courses_avg":82.32},{"courses_title":"comptn, progrmng","courses_avg":83.43},{"courses_title":"comptn, progrmng","courses_avg":82.43},{"courses_title":"comptn, progrmng","courses_avg":84.91},{"courses_title":"comptn, progrmng","courses_avg":85.46},{"courses_title":"comptn, progrmng","courses_avg":82.44},{"courses_title":"comptn, progrmng","courses_avg":85.11}
+    ]
+}

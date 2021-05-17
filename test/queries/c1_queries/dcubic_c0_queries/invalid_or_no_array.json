@@ -1,0 +1,23 @@
+{
+    "title": "OR is not a non-empty array",
+    "query": {
+        "WHERE": {
+            "OR":
+            {
+                "LT": {
+                    "courses_avg": 70
+                }
+            }
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

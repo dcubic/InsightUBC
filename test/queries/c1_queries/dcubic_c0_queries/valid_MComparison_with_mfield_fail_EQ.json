@@ -1,0 +1,19 @@
+{
+    "title": "valid MComparison with mfield fail EQ",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_fail": 250
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_fail"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"chem","courses_title":"structural chem","courses_fail":250}]
+}

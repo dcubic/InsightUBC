@@ -1,0 +1,49 @@
+{
+     "title": "group courses query with multiple GROUP",
+     "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+              "courses_dept": "*cpsc*"
+            }
+          },
+          {
+            "GT": {
+              "courses_avg": 87
+            }
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_id",
+          "maxPass"
+        ],
+        "ORDER": {
+          "dir": "UP",
+          "keys": [
+            "courses_id",
+            "maxPass"
+          ]
+        }
+      },
+      "TRANSFORMATIONS": {
+        "GROUP": [
+          "courses_id",
+          "courses_instructor"
+        ],
+        "APPLY": [
+          {
+            "maxPass": {
+              "MAX": "courses_pass"
+            }
+          }
+        ]
+      }
+    },
+     "isQueryValid": true,
+    "result":[
+        {"courses_id":"301","maxPass":32},{"courses_id":"301","maxPass":32},{"courses_id":"319","maxPass":57},{"courses_id":"319","maxPass":74},{"courses_id":"319","maxPass":74},{"courses_id":"445","maxPass":16},{"courses_id":"445","maxPass":16},{"courses_id":"449","maxPass":8},{"courses_id":"449","maxPass":8},{"courses_id":"449","maxPass":8},{"courses_id":"490","maxPass":6},{"courses_id":"490","maxPass":15},{"courses_id":"490","maxPass":22},{"courses_id":"501","maxPass":7},{"courses_id":"501","maxPass":8},{"courses_id":"501","maxPass":8},{"courses_id":"503","maxPass":19},{"courses_id":"503","maxPass":19},{"courses_id":"507","maxPass":7},{"courses_id":"507","maxPass":19},{"courses_id":"507","maxPass":19},{"courses_id":"509","maxPass":7},{"courses_id":"509","maxPass":7},{"courses_id":"513","maxPass":11},{"courses_id":"513","maxPass":12},{"courses_id":"513","maxPass":12},{"courses_id":"521","maxPass":18},{"courses_id":"521","maxPass":18},{"courses_id":"522","maxPass":7},{"courses_id":"522","maxPass":7},{"courses_id":"527","maxPass":9},{"courses_id":"527","maxPass":9},{"courses_id":"527","maxPass":9},{"courses_id":"540","maxPass":31},{"courses_id":"540","maxPass":59},{"courses_id":"540","maxPass":59},{"courses_id":"543","maxPass":15},{"courses_id":"543","maxPass":15},{"courses_id":"544","maxPass":6},{"courses_id":"547","maxPass":25},{"courses_id":"547","maxPass":25},{"courses_id":"589","maxPass":3}
+    ]
+ }

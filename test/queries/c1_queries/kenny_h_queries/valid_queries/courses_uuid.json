@@ -1,0 +1,27 @@
+{
+    "title": "select the course with uuid 420",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_uuid": "420"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_year",
+                "courses_dept",
+                "courses_id",
+                "courses_instructor",
+                "courses_title",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":83.41,"courses_pass":163,"courses_fail":3,"courses_audit":0,"courses_year":2015,"courses_dept":"phys","courses_id":"170","courses_instructor":"mcmillan, j malcolm","courses_title":"mechanics i","courses_uuid":"420"}]
+}

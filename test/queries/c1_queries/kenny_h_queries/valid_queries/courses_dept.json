@@ -1,0 +1,31 @@
+{
+    "title": "select all of the cpsc courses ordered by their id",
+    "query": {
+      "WHERE": {
+        "AND": [
+          {
+            "IS": {
+         			 "courses_dept": "cpsc"
+        			}
+          },
+          {
+            	"IS": {
+         			 "courses_instructor": "*feeley*"
+        			}
+          }
+        ]
+      },
+      "OPTIONS": {
+        "COLUMNS": [
+          "courses_id",
+          "courses_dept",
+          "courses_instructor"
+        ],
+        "ORDER": "courses_id"
+      }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_id":"210","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"210","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"210","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"213","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"313","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"313","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"313","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"313","courses_dept":"cpsc","courses_instructor":"feeley, michael"},{"courses_id":"313","courses_dept":"cpsc","courses_instructor":"feeley, michael"}
+    ]
+}

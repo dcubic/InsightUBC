@@ -1,0 +1,21 @@
+{
+    "title": "valid ORDER by fail",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_fail": 200
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_title",
+                "courses_fail"
+            ], "ORDER": "courses_fail"
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_dept":"math","courses_title":"int calc ap ph s","courses_fail":203},{"courses_dept":"biol","courses_title":"cell biology 1","courses_fail":204},{"courses_dept":"math","courses_title":"int calc ap ph s","courses_fail":205},{"courses_dept":"chem","courses_title":"org chem biol sc","courses_fail":213},{"courses_dept":"econ","courses_title":"prncpls micrecon","courses_fail":221},{"courses_dept":"math","courses_title":"int calc ap ph s","courses_fail":222},{"courses_dept":"chem","courses_title":"org chem biol sc","courses_fail":226},{"courses_dept":"biol","courses_title":"unicellular life","courses_fail":230},{"courses_dept":"chem","courses_title":"structural chem","courses_fail":235},{"courses_dept":"chem","courses_title":"structural chem","courses_fail":250},{"courses_dept":"chem","courses_title":"strctr bond chem","courses_fail":251},{"courses_dept":"chem","courses_title":"structural chem","courses_fail":260},{"courses_dept":"chem","courses_title":"strctr bond chem","courses_fail":264},{"courses_dept":"chem","courses_title":"structural chem","courses_fail":266},{"courses_dept":"chem","courses_title":"structural chem","courses_fail":287}
+    ]
+}

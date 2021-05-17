@@ -1,0 +1,16 @@
+{
+    "title": "column array in options is empty",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

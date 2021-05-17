@@ -1,0 +1,20 @@
+{
+    "title": "valid MComparison with mfield pass LT",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_pass": 1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_title",
+                "courses_pass"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[
+        {"courses_title":"found re apprai","courses_pass":0},{"courses_title":"found re apprai","courses_pass":0},{"courses_title":"sustnbt&frst ops","courses_pass":0},{"courses_title":"forest ecology","courses_pass":0},{"courses_title":"in land food com","courses_pass":0},{"courses_title":"in land food com","courses_pass":0},{"courses_title":"prpty,ident&uses","courses_pass":0}
+    ]
+}
